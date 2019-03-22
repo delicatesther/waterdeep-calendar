@@ -1,0 +1,61 @@
+// ***************** VARIABLES ***************** //
+// Description:
+// Variables to be reused throughout scss, e.g. colours, font-sizes
+// -----------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Colours
+// -----------------------------------------------------------------------------
+$black:             #000000;
+$white:             #ffffff;
+$gray-dark:         #333333;
+$gray-light:        #cccccc;
+$blue-dark:         #000EB2;
+$blue-med:          #6a73d6;
+$mustard:           #B28D00;
+$paper:             #FFEEAF;
+$teak:              #B2A369;
+$test:              #B28C00;
+$moss:              #655000;
+
+
+
+// -----------------------------------------------------------------------------
+// Colours
+// -----------------------------------------------------------------------------
+$basefont: 'PT serif', serif;
+$headingfont: 'PlainBlack', cursive;
+
+// -----------------------------------------------------------------------------
+// Breakpoints
+// -----------------------------------------------------------------------------
+$breakpoints: (
+  'xs': (max-width: 320px),
+  's': (max-width: 767px),
+  'm': (min-width: 768px),
+  'l': (min-width: 1024px),
+  'xl': (min-width: 1250px),
+  'xxl': (min-width: 1600px),
+  'landscape': (orientation: landscape),
+  'portrait': (orientation: portrait),
+);
+
+// -----------------------------------------------------------------------------
+// Z-indexes (to reduce z-index pollution)
+// -----------------------------------------------------------------------------
+$z-index: (
+  negative     : -1,
+  z1           :  1,     // General z layer
+  z2           :  2,     // General z layer
+  z3           :  3,     // General z layer
+  z4           :  4,     // General z layer
+
+
+  hero         :  50,     // top header menu
+  hero-ui      :  60,     // top header menu
+  header       :  70,     // top header menu
+  overlay      :  80,     // general overlay to show a modal
+  modal        :  90,    // modal / poup layer
+  loader       :  100,     // loader indicator
+  cookie       :  110    // cookiebar trumps all
+);

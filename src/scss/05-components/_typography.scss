@@ -1,0 +1,26 @@
+body {
+    font-family: $basefont;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1, h2 {
+    font-family: $headingfont;
+}
+
+h3 {
+    font-family: $basefont;
+    font-weight: bold;
+}
+
+article h1 {
+    font-size: 24px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: 700;
+}

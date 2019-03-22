@@ -1,0 +1,15 @@
+<svg id="banner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <linearGradient id="a" x2="40" y1="20" y2="20" gradientUnits="userSpaceOnUse">
+    <stop offset="0"/>
+    <stop offset=".022" stop-color="#000111"/>
+    <stop offset=".08" stop-color="#000436"/>
+    <stop offset=".144" stop-color="#000758"/>
+    <stop offset=".214" stop-color="#000974"/>
+    <stop offset=".292" stop-color="#000b8b"/>
+    <stop offset=".383" stop-color="#000c9d"/>
+    <stop offset=".492" stop-color="#000da9"/>
+    <stop offset=".64" stop-color="#000eb0"/>
+    <stop offset="1" stop-color="#000eb2"/>
+  </linearGradient>
+  <path fill="url(#a)" d="M40 0H0v40h40L19.2 20z"/>
+</svg>

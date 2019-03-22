@@ -1,0 +1,39 @@
+/*
+  ******************* LAYOUT GRID ******************
+  Description:
+    Global grid system to define lay-outs.
+  --------------------------------------------------
+*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+  'header'
+  'mainContent'
+  'footer';
+  justify-content: center;
+  overflow-x: hidden;
+  > * {
+    align-self: stretch;
+  }
+  @include breakpoint('xl') {
+    grid-template-columns:  minmax(24px, 1fr) minmax(95%, 1fr) minmax(24px, 1fr);
+    grid-template-areas:
+    'header header header'
+    '. mainContent .'
+    '. footer .';
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: mainContent;
+}
+
+.footer {
+  grid-area: footer;
+}

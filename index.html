@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waterdeep Calendar</title>
+    <link rel="stylesheet" href="./dist/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet">
+    <style>
+    /* Added inline here so without stylesheet, the "special" days do not muck up 12 month system */
+    .menu .special-day {
+        display: inline;
+    }
+    </style>
+</head>
+<body>
+    <section id="js-overlay" class="overlay">
+        <div id="js-lightbox-wrapper" class="lightbox-wrapper">
+            <div id="js-lightbox" class="lightbox">
+            </div>
+        </div>
+    </section>
+    <main class="main">
+
+        <header class="header">
+            <h1>The Waterdeep Calendar</h1>
+        </header>
+
+
+        <div class="menu-wrapper">
+
+            <nav id="js-menu" class="menu">
+                <button id="js-hamburger" class="hamburger">
+                    <svg class="hamburger-icon" viewBox="0 0 32 32">
+                        <title>Show Menu</title>
+                        <use xlink:href="./images/hamburger.svg#hamburger-svg" href="./images/hamburger.svg#hamburger-svg"/>
+                    </svg>
+                    <svg class="close-icon" viewBox="0 0 212.982 212.982">
+                        <title>Close Menu</title>
+                        <use xlink:href="./images/close.svg#close-svg" href="./images/close.svg#close-svg"/>
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                        <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                </button>
+                <ol>
+                    <li><a href="#hammer">Hammer</a></li>
+                    <li class="special-day"><a href="#midwinter">Midwinter</a></li>
+                    <li><a href="#alturiak">Alturiak</a></li>
+                    <li><a href="#ches">Ches</a></li>
+                    <li><a href="#tarsakh">Tarsakh</a></li>
+                    <li class="special-day"><a href="#greengrass">Greengrass</a></li>
+                    <li><a href="#mirtul">Mirtul</a></li>
+                    <li><a href="#kythorn">Kythorn</a></li>
+                    <li><a href="#flamerule">Flamerule</a></li>
+                    <li class="special-day"><a href="#midsummer">Midsummer</a></li>
+                    <li><a href="#elesias">Elesias</a></li>
+                    <li><a href="#eleint">Eleint</a></li>
+                    <li class="special-day"><a href="#highharvesttide">High Harvest Tide</a></li>
+                    <li><a href="#marpenoth">Marpenoth</a></li>
+                    <li><a href="#uktar">Uktar</a></li>
+                    <li><a href="#nightal">Nightal</a></li>
+
+                </ol>
+            </nav>
+        </div>
+
+        <div class="main-content">
+
+            <div id="result"> </div>
+            <div id="details"> </div>
+
+            <!--Hammer-->
+            <article class="month">
+                <header id="js-header-hammer" class="header-month">
+                    <a id="hammer" class="js-target-anchor target-anchor"></a>
+                    <h1>Hammer</h1>
+                    <span class="month-nickname">
+                        Deepwinter
+                        <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                            <use xlink:href="#banner" href="#banner" />
+                        </svg>
+                        <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                            <use xlink:href="#banner" href="#banner" />
+                        </svg>
+                    </span>
+                </header>
+                <section>
+                    <ol class="tendays">
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 1">1</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>Wintershield</h3>
+                                </summary>
+                                <div>
+                                    <p>Marking the start of the new year, this observance is a widely recognized day off work, when folk sip warmed ciders and broths (often laced with herbs for health and to bring on visions) and stay inside. They tell tales of what interested them or was important in the year just done, and discuss what they intend to do or should deal with- or things that everyone "should keep a hawk's cleareyeon"- in the year ahead.</p>
+                                    <p>Such talk inevitably leads to discussions of politics, wars, and the intentions of rulers. Maps are usually con- sulted, and it's widely considered lucky to possess and examine a map on Wintershield. Map sales a re brisk in the tenday preceding this holiday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 2">2</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 3">3</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 4">4</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 5">5</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 6">6</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 7">7</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 8">8</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 9">9</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Hammer 10">10</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 11">11</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 12">12</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 13">13</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 14">14</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 15">15</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 16">16</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 17">17</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 18">18</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 19">19</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Hammer 20">20</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 21">21</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 22">22</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 23">23</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 24">24</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 25">25</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 26">26</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 27">27</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 28">28</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 29">29</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Hammer 30">30</time>
+                        </li>
+                    </ol>
+                </section>
+            </article>
+            <!--/Hammer-->
+
+            <!--Midwinter-->
+            <section class="special-day">
+                <a id="midwinter" class="js-target-anchor target-anchor"></a>
+                <h3>Midwinter</h3>
+            </section>
+            <!--/Midwinter-->
+
+            <!--Alturiak-->
+            <article class="month">
+                <header class="header-month">
+                    <a id="alturiak" class="js-target-anchor target-anchor"></a>
+                    <h1>
+                        Alturiak
+                    </h1>
+                    <div class="month-nickname">
+                        <span>The Claw of Winter
+                            <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                            <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                        </span>
+                    </div>
+                </header>
+                <section>
+                    <ul class="tendays">
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 1">1</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 2">2</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 3">3</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 4">4</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 5">5</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 6">6</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 7">7</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 8">8</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 9">9</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Alturiak 10">10</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 11">11</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 12">12</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 13">13</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 14">14</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>The Grand Revel</h3>
+                                </summary>
+                                <div>
+                                    <p>Led by the clergy of Sune, Sharess, and Lliira, the Grand Revel is a day of dancing, music, and the consumption of sweet treats of a ll kinds, from chocolate to red firemint candies. Although some of the dancing is wanton a nd performed for show, large-scale ring dances in the street for all ages are also popular. All the dancing ends at dusk, after which bards and minstrels perform at "love feasts" for families.</p>
+                                    <p>Couples-or those desiring to become couples- slip away together to kiss, exchange promises, and trade small tokens of affection (often rings blessed by clergy with prayers of faithfulness).</p>
+                                    <p>Even if you have no paramour, indulge a little in the dance and food of this fine tradition. The night might be cold. but your heart will be warmed.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 15">15</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 16">16</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 17">17</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 18">18</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 19">19</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Alturiak 20">20</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 21">21</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 22">22</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 23">23</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 24">24</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 25">25</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 26">26</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 27">27</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 28">28</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 29">29</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Alturiak 30">30</time>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--/Alturiak-->
+
+            <!--Ches-->
+            <article class="month">
+                <header class="header-month">
+                    <a id="ches" class="js-target-anchor target-anchor"></a>
+                    <h1>Ches</h1>
+                    <div class="month-nickname">
+                        <span>The Claw of Sunsets
+                            <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                            <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                        </span>
+                    </div>
+                </header>
+                <section>
+                    <ul class="tendays">
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 1">1</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>Rhyestertide</h3>
+                                </summary>
+                                <div>
+                                    <p>This holiday is named in honor of Lathander's first prophet, Rhyester, a young blind boy who was cured of that blindness by the dawn's light on this day more than seven centuries ago. That holy event occurred in the vicinity of Silverymoon. but Lathander has long had a much larger temple in Waterdeep, and a following to match.</p>
+                                    <p>Each of the faithful dons bright garb of sunrise hues and keeps one eye covered until the next dawn in honor of Rhyester. If you want to feel like a local, catch the eye of any celebrant you see and wink. Fine friendships have grown from far less.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 2">2</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 3">3</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 4">4</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 5">5</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 6">6</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 7">7</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 8">8</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 9">9</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Ches 10">10</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 11">11</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 12">12</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 13">13</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 14">14</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 15">15</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 16">16</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 17">17</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 18">18</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 19">19</time>
+                            <h2>Spring Equinox</h2>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>Fey Day</h3>
+                                </summary>
+                                <div>
+                                    <p>The veil between this world and the faerie realm of the Feywild is thought to be weak on this day. Though this phenomenon provokes caution in rural areas (with folk avoiding woodlands, putting offerings of food on door steps. and the like), it is an occasion of much drinking, singing, and dancing in Waterdeep. The wealthy host elaborate masked balls, while poorer folk don costumes of their own make and travel door to door, gaining brief entry into the celebrations in exchange for performing a song or a short play. All adopt the guises of fey beings and the supposed rulers of the Feywild, such as Queen Titania, Oberon. and Hyrsam, the Prince of Fools.</p>
+                                    <p>Those inclined to remain sullen in the face of such frivolity had best stay home, for celebrants do their utmost to evoke a smile from those they meet.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Ches 20">20</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 21">21</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 22">22</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 23">23</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 24">24</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 25">25</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 26">26</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 27">27</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 28">28</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 29">29</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Ches 30">30</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P5D" title="Fleetswake">Fleetswake</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival celebrates the sea, maritime trade. and the gods of the sea. navigation, and weather. It spans the last tenday of Ches, and includes a series of boat races, the Shipwrights' Ball at the Shipwrights' House, and guild-sponsored galas at the Copper Cup festhall. According to custom, the winners of the various competitions don't keep their trophies and earnings, but deliver them to the priests ofUmberlee at the Queenspire, her temple on the beach by the east entrance to the Great Harbor at the conclusion of the festival.</p>
+                                    <p>The last two days of Fleetswake are the occasion of the Fair Seas Festival. During this time, there is much feasting on seafood, the harbor is strewn with Rower petals, and City Guards go from tavern to tavern collecting offerings for Umberlee. Collection boxes also appear at large festival gatherings. Upon sunset of the fina l day. the collecced coin is placed in chests and dumped into the deepest part of the harbor.</p>
+                                    <p>This festival has existed in a number of forms since the first trade-meets occurred here more than two millennia ago, and an uncountable amount of wealth remains sunken in what has long been known as Umberlee's Cache. The area is closely watched by merfolk guardians, whose standing orders are to kill anyone attempting to disturb it. Rumors abound that the chests have magical protections; one story tells of thieves who stole some of the collection years ago and tried to leave the city under false pretenses, only to see a squall spring up as soon as their ship left the harbor. A huge wave shaped like a hand swept the thieves overboard, but spared the ship and its crew.</p>
+                                </div>
+                            </details>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--/Ches-->
+
+            <!--Tarsakh-->
+            <article class="month">
+                <header class="header-month">
+                    <a id="tarsakh" class="js-target-anchor target-anchor"></a>
+                    <h1>Tarsakh</h1>
+                    <div class="month-nickname">
+                        <span>The Claw of Storms
+                            <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                            <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                        </span>
+                    </div>
+                </header>
+                <section>
+                    <ul class="tendays">
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 1">1</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>
+                                        <time datetime="P10D" title="Waukeentide">Waukeentide</time>
+                                        <span>Caravance</span>
+                                    </h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                    <strong>Caravance</strong>
+                                    <p>This gift-giving holiday commemorates the traditional arrival of the first caravans of the season into the city. Many parents hide gifts for their offspring in their homes, telling the children that they were left by Old Carvas- a mythical peddler who arrived with the first caravan to reach Waterdeep, his wagon loaded down with toys for children to enjoy.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 2">2</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 3">3</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 4">4</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 5">5</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>
+                                        <time datetime="P10D" title="Waukeentide">Waukeentide</time>
+                                        <span>Goldenight</span>
+                                    </h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                    <strong>Goldenight</strong>
+                                    <p>This festival celebrates coin and gold, with many businesses staying open all night, offering midnight sales and other promotions. Some celebrants and customers decorate themselves with gold dust and wear coins as jewelry.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 6">6</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 7">7</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>
+                                        <time datetime="P10D" title="Waukeentide">Waukeentide</time>
+                                        <span>Guildsmeet</span>
+                                    </h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                    <strong>Guildsmeet</strong>
+                                    <p>On this holiday, guild members gather in their halls for the announcement of new policies and a celebration of business concluded for the year. These gatherings culminate in a gala festival and dance sponsored by several guilds, which lasts from dusk till dawn and overruns the Market, the Cynosure, the Field of Triumph, and all areas in between.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 8">8</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 9">9</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P10D" title="Waukeentide">Waukeentide</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Tarsakh 10">10</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3>
+                                        <time datetime="P10D" title="Waukeentide">Waukeentide</time>
+                                        <span>Leiruin</span>
+                                    </h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                    <strong>Leiruin</strong>
+                                    <p>ln times long past, Waukeen caught Leira, the goddess of illusions and deception,  attempting to cheat her in a deal, and buried her under a mountain of molten gold as punishment. A commemoration of that event, Leiruin is the day for guild members to pay their annual dues and for guildmasters to meet with the Lords of Waterdeep and renew their charters for another year.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 11">11</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 12">12</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 13">13</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 14">14</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 15">15</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 16">16</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 17">17</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 18">18</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 19">19</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Tarsakh 20">20</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 21">21</time>
+
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 22">22</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 23">23</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 24">24</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 25">25</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 26">26</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 27">27</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 28">28</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 29">29</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Tarsakh 30">30</time>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--/Tarsakh-->
+
+            <!--Greengrass-->
+            <section class="special-day">
+                <a id="greengrass" class="js-target-anchor target-anchor"></a>
+                <h3>Greengrass</h3>
+            </section>
+            <!--/Greengrass-->
+
+            <!--Mirtul-->
+            <article class="month">
+                <header class="header-month">
+                    <a id="mirtul" class="js-target-anchor target-anchor"></a>
+                    <h1>Mirtul</h1>
+                    <div class="month-nickname">
+                        <span>The Melting
+                            <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                            <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                                <use xlink:href="#banner" href="#banner" />
+                            </svg>
+                        </span>
+                    </div>
+                </header>
+                <section>
+                    <ul class="tendays">
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 1">1</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 2">2</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 3">3</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 4">4</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 5">5</time>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 6">6</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P4D" title="The Plowing and Running">The Plowing and Running</time></h3>
+                                </summary>
+                                <div>
+                                    <p>Rural areas around the city observe this holiday in the traditional sense of shared activities of plowing fields and moving (or "running") livestock. But within the city, the holiday is celebrated with a series of races. Foot, horse, and chariot races are run through courses in each ward, and the winners from each ward compete at the Field of Triumph.</p>
+                                    <p>If you really want to see the wards come to life, this is the time. Pick your favorite, wear its colors, and cheer alongside its residents. Beller yet. if you're of an adventuresome bent, register in your favored ward and compete! Who knows? Your name or visage might soon have a place in the House of Heroes.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 7">7</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P4D" title="The Plowing and Running">The Plowing and Running</time></h3>
+                                </summary>
+                                <div>
+                                    <p>This festival has long gathered a number of older holidays under one name, stretching those celebrations into a holiday season that lasts a tenday.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 8">8</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P4D" title="The Plowing and Running">The Plowing and Running</time></h3>
+                                </summary>
+                                <div>
+                                    <p>Rural areas around the city observe this holiday in the traditional sense of shared activities of plowing fields and moving (or "running") livestock. But within the city, the holiday is celebrated with a series of races. Foot, horse, and chariot races are run through courses in each ward, and the winners from each ward compete at the Field of Triumph.</p>
+                                    <p>If you really want to see the wards come to life, this is the time. Pick your favorite, wear its colors, and cheer alongside its residents. Beller yet. if you're of an adventuresome bent, register in your favored ward and compete! Who knows? Your name or visage might soon have a place in the House of Heroes.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 9">9</time>
+                            <details class="holiday">
+                                <summary>
+                                    <h3><time datetime="P4D" title="The Plowing and Running">The Plowing and Running</time></h3>
+                                </summary>
+                                <div>
+                                    <p>Rural areas around the city observe this holiday in the traditional sense of shared activities of plowing fields and moving (or "running") livestock. But within the city, the holiday is celebrated with a series of races. Foot, horse, and chariot races are run through courses in each ward, and the winners from each ward compete at the Field of Triumph.</p>
+                                    <p>If you really want to see the wards come to life, this is the time. Pick your favorite, wear its colors, and cheer alongside its residents. Beller yet. if you're of an adventuresome bent, register in your favored ward and compete! Who knows? Your name or visage might soon have a place in the House of Heroes.</p>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="tenday-1 day">
+                            <time datetime="P1D" title="Mirtul 10">10</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 11">11</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 12">12</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 13">13</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 14">14</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 15">15</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 16">16</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 17">17</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 18">18</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 19">19</time>
+                        </li>
+                        <li class="tenday-2 day">
+                            <time datetime="P1D" title="Mirtul 20">20</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 21">21</time>
+
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 22">22</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 23">23</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 24">24</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 25">25</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 26">26</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 27">27</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 28">28</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 29">29</time>
+                        </li>
+                        <li class="tenday-3 day">
+                            <time datetime="P1D" title="Mirtul 30">30</time>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--/Mirtul-->
+
+            <!--Kythorn-->
+            <article class="month">
+              <header class="header-month">
+                <a id="kythorn" class="js-target-anchor target-anchor"></a>
+                <h1>Kythorn</h1>
+                <div class="month-nickname">
+                  <span>The Time of Flowers
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 1">1</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Trolltide">Trolltide</time></h3>
+                      </summary>
+                      <div>
+                        <p>On this day commemorating Watcrdeep's victory in the Second Trollwar, children run through the city acting Like trolls, banging on doors and growling. from highsun till dusk. Home and shop owners are expected to give the children candy, fruits. or small items. Those who give no treat can expect to become the target of a trick at sundown. This mischief typically takes the form of "troll scratchings" at doors and windows. Those with more malicious intent sing screechingly in the wee hours, and hurl raw eggs al windows, signs, and the heads of those who try to stop them. Have some candy on hand or some sweet rolls, and all will be calm where you live.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 3">3</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 7">7</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Kythorn 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 14">14</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Guildhall Day">Guildhall Day</time></h3>
+                      </summary>
+                      <div>
+                        <p>This day is a time of trade fairs. Most shops are closed, and street sales are suspended for all but walking food peddlers. Guildhall Day celebrates the fruits of everyone's labor with revelations of new products, innovations, fashions, and signage extolling the extent and quality of guild members' services and wares. These offerings usually take the form of glittering displays, but guilds sometimes also sponsor brief plays or other hired entertainments (jugglers, singers, magic shows put on by hedge wizards and professional raconteurs) at which prizes or free samples are distributed. Many guilds try to recruit during this time. Guildhall Day is an excellent time to browse the city's merchandise- and it doesn't matter if you can't afford what you see, because you can't buy it that day anyway.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Kythorn 20">20</time>
+                    <h2>Summer Solstice</h2>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Trolltide">Dragondown</time></h3>
+                      </summary>
+                      <div>
+                          <p>This day in Kythorn is celebrated with bonfires and rituals to "tame" or "drive down" dragons. In Waterdeep, the celebrations take the form of parades that center around effigies built of wood and cloth and filled with straw. Each effigy is named and has a traditional depiction. for it represents one of a handful of dragons the city has faced in its history. After being paraded to a square near where the dragon was defeated or driven off, the enormous effigy is burned.</p>
+                          <p>The height of the celebration comes when the effigy of Kistarianth the Red is burned on the slopes of Mount Waterdeep. A dracolich version of Kistarianth is then carried up the slopes and burned as well. These proceedings symbolize the defeat of Kistarianth first by the paladin Athar, and again decades later by his son, Piergeiron. Tradition dictates that the winners of the races run during the Plowing and Running take the role of the dragons' slayers, with the champion of the chariot race representing Athar and the champion of the horse race playing Piergeiron.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 21">21</time>
+
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Kythorn 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Kythorn-->
+
+            <!--Flamerule-->
+            <article class="month">
+              <header class="header-month">
+                <a id="flamerule" class="js-target-anchor target-anchor"></a>
+                <h1>Flamerule</h1>
+                <div class="month-nickname">
+                  <span>Summertide
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 1">1</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Founders' Day">Founders' Day</time></h3>
+                      </summary>
+                      <div>
+                        <p>This day commemorates the birth of the city. The Field of Triumph is the site of illusory displays that chronicle the history of Waterdeep, as well as martial exhibitions by the Guard and other worthies. Many festhalls sponsor Founders' Day costume contests, with prizes going to those who wear the best recreations of the garb of historical personages.</p>
+                        <p>Once banned as frivolous and distracting, the practice of veiling Castle Waterdeep with an illusion has been reinstated. Several mages come together to produce the effect, which seemingly transforms the castle into the ancient log fortress of Nimoar. The illusion typically lasts from midday to sunset (unless someone has the audacity and magical might to dispel it) and is regarded as a stunning work of magical art.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 3">3</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P3D" title="Sornyn">Sornyn</time></h3>
+                      </summary>
+                      <div>
+                        <p>Sornyn is a festival of both Waukeen and Lathander, and is used for planning business, making treaties and agreements, and receiving envoys from unknown lands and traditional foes. Much wine is drunk over this threeday occasion when, as the saying goes, "My enemy is like family to me." If you are a newcomer to the city, this time is an excellent opportunity for you to engage with new partners in business or to gain financial support for some endeavor. My agreement to write Volo's Guide to Waterdeep was signed on a warm Sornyn evening many years ago, so who knows where your own initiative will take you?</p>          </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 4">4</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P3D" title="Sornyn">Sornyn</time></h3>
+                      </summary>
+                      <div>
+                        <p>Sornyn is a festival of both Waukeen and Lathander, and is used for planning business, making treaties and agreements, and receiving envoys from unknown lands and traditional foes. Much wine is drunk over this threeday occasion when, as the saying goes, "My enemy is like family to me." If you are a newcomer to the city, this time is an excellent opportunity for you to engage with new partners in business or to gain financial support for some endeavor. My agreement to write Volo's Guide to Waterdeep was signed on a warm Sornyn evening many years ago, so who knows where your own initiative will take you?</p>          </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 5">5</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P3D" title="Sornyn">Sornyn</time></h3>
+                      </summary>
+                      <div>
+                        <p>Sornyn is a festival of both Waukeen and Lathander, and is used for planning business, making treaties and agreements, and receiving envoys from unknown lands and traditional foes. Much wine is drunk over this threeday occasion when, as the saying goes, "My enemy is like family to me." If you are a newcomer to the city, this time is an excellent opportunity for you to engage with new partners in business or to gain financial support for some endeavor. My agreement to write Volo's Guide to Waterdeep was signed on a warm Sornyn evening many years ago, so who knows where your own initiative will take you?</p>          </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 7">7</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Sornyn">Lliira's Night</time></h3>
+                      </summary>
+                      <div>
+                        <p>Originally a celebration held only in Waterdeep, this holiday has since spread up and down the Sword Coast. It has received a recent boost in popularity from the custom started in Baldur's Gate of lighting celebratory smokepowder fireworks - all purchased from Felogyr's Fireworks of that city, and utilized only by the City Guard, of course. This nightlong festival honors the Lady of joy with dances and balls throughout the city.</p>
+                        </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Flamerule 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Flamerule 20">20</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 21">21</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Flamerule 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Flamerule-->
+
+            <!--Midsummer-->
+            <section class="special-day">
+                <a id="midsummer" class="js-target-anchor target-anchor"></a>
+                <h3>Midsummer</h3>
+            </section>
+            <!--/Midsummer-->
+
+            <!--Shieldmeet-->
+            <section class="special-day">
+                <a id="shieldmeet" class="js-target-anchor target-anchor"></a>
+                <h3>Shieldmeet <span>(Once every 4 years)</span></h3>
+            </section>
+            <!--/Shieldmeet-->
+
+            <!--Elesias-->
+            <article class="month">
+              <header class="header-month">
+                <a id="elesias" class="js-target-anchor target-anchor"></a>
+                <h1>Elesias</h1>
+                <div class="month-nickname">
+                  <span>High Sun
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 1">1</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Aghairon's Day">Aghairon's Day</time></h3>
+                      </summary>
+                      <div>
+                        <p>Many small rituals are held throughout this day, dedicated to honoring the first Open Lord. The Lords of Waterdeep toast Ahghairon and the Watchful Order, and guildmasters toast the Lords in Ahghairon's name. Commoners leave violets (Ahghairon's favorite Hower) around Ahghairon's Tower, on his statue in the City of the Dead, and atop the altars of the House of Wonder. Bards perform songs in honor of the wizard all over the city. The Open Lord visits taverns and inns throughout Waterdeep to wish the people well--giving short speeches, offering toasts to Ahghairon's memory, buying rounds of drinks, or paying for meals or accommodation. Needless to say, establishments of those sorts are generally full throughout the day.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 3">3</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 7">7</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Elesias 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Elesias 20">20</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 21">21</time>
+                    <h2>Autumn Equinox</h2>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Elesias 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Elesias-->
+
+            <!--Eleint-->
+            <article class="month">
+              <header class="header-month">
+                <a id="eleint" class="js-target-anchor target-anchor"></a>
+                <h1>Eleint</h1>
+                <div class="month-nickname">
+                  <span>The Fading
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 1">1</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 3">3</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 7">7</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Eleint 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Eleint 20">20</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 21">21</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Bright Sword's">Bright Sword's</time></h3>
+                      </summary>
+                      <div>
+                        <p>On this day, the City Guard, the City Navy, and the City Watch -all in glittering array- conduct parades, give demonstrations of martial skill, and stage mock battles. Those desiring to join their ranks are given a chance to demonstrate their prowess. usually with wooden practice weapons in contests against veteran soldiers.</p>
+                        <p>Makers and vendors of weapons sell their wares openly in the markets, experts who can hurl or juggle weapons show off their skills, and the wards compete in wrestling and boxing matches.</p>
+                        <p>The most anticipated part of the day is when horses are cleared from the Field of Triumph and the surrounding streets so that the Griffon Cavalry can perform aerial displays over the crowds in the stadium. Members of the Watchful Order present the cavalry with illusory foes to fight, allowing the griffon riders to engage in thrilling battles as the people watch.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Eleint 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Eleint-->
+
+            <!--High Harvest Tide-->
+            <section class="special-day">
+                <a id="highharvesttide" class="js-target-anchor target-anchor"></a>
+                <h3>High Harvest Tide</h3>
+            </section>
+            <!--/High Harvest Tide-->
+
+            <!--Marpenoth-->
+            <article class="month">
+              <header class="header-month">
+                <a id="marpenoth" class="js-target-anchor target-anchor"></a>
+                <h1>Marpenoth</h1>
+                <div class="month-nickname">
+                  <span>Leaffal
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 1">1</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 3">3</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Day of Wonders">Day of Wonders</time></h3>
+                      </summary>
+                      <div>
+                        <p>The imaginative inventions of the Gondar are revealed on this day and paraded through the city. These devices range from something as humble as new cabinet hinges to massive mechanical constructs that walk or roll about. Failure is the paramour of invention, though, meaning it is a rare year when there isn't some notable disruption of the celebration.</p>
+                        <p>The Hying chair of Marchell was one such recent oddity- a device that worked marvelously on the way up but was incapable of descending. Marchell was rescued by the Griffon Cavalry, but his flying chair drifted away and was never seen again.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 7">7</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Stoneshar">Stoneshar</time></h3>
+                      </summary>
+                      <div>
+                        <p>Stoneshar is an all-faiths day during which folk strive not to be idle. Even children at play are encouraged to dig holes, build sand castles, or construct crude models.</p>
+                        <p>Waterdavians consider Stoneshar the best day of the year to begin construction of a building, either by digging out a cellar or laying a foundation. The common wisdom is that folk who undertake new projects on Stoneshar can expect blessings upon their works in the coming year, whereas individuals who do nothing constructive on this day can expect all manner of misfortune to rain down on them in the year ahead.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Marpenoth 10">10</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Reign of Misrule">Reign of Misrule</time></h3>
+                      </summary>
+                      <div>
+                        <p>Swift on the heels of Stoneshar comes the Reign of Misrule. This day honors Beshaba, goddess of misfo rtune. People of the city are expected to break trust, belie oaths, and disobey the normal order- as long as no laws are actually broken and no rift is made that can't be later bridged. During the Reign of Misrule, nobles serve meals to their servants, children take control of schools, priests give worship to their god's foes, and any who wish to may participate in a guild's trade. Pranks are played by and on many, from simple tricks to those requiring elaborate planning. Sundown brings an end to the festivities, and most folk spend much of the night cleaning and reordering things for the following day. Many visitors decline to participate, but doing so often inspires misfortune rather than avoiding it. For fear of catching the bad luck of cynics, citizens do their best to avoid talking to anyone known to not have played along, or dealing with them in any way until Gods' Day.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 15">15</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Gods' Day">Gods' Day</time></h3>
+                      </summary>
+                      <div>
+                        <p>This holiday observes the anniversary of the end of the Godswar in 1358 DR, when the gods of Faeriln returned to the heavens. Private shrines are brought out into the open, and many people wear holy symbols of their favored deities. A Gods' Day tradition in Waterdeep strictly limits the use of magic, in remembrance of the wild magic wrought during the Time of Troubles. Though not outlawed fully, spellcasting is allowable only in self-defense or in cases of extreme need.</p>
+                        <p>At night, this holiday becomes solemn and serious, as many Waterdavians offer prayers in thanks for the lives they have under their gods. The Griffon Cavalry sets up an immense bonfire at the peak of Mount Waterdeep, honoring the fallen and the risen gods Myrkul, Cyric, Kelemvor, Mystra, Helm, and Ao who appeared here. In thanks for their defense during Myrkul's invasion and the resulting fires that raged through the Southern, Dock, and Castle Wards, Gods' Day is also a semiofficial "Be Kind to the Guard and Watch Day" in Waterdeep. Feel free to participate by handing out small gifts and kind words, but be aware that any gift of greater value than a few nibs might be interpreted as a bribe.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Marpenoth 20">20</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 21">21</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Marpenoth 30">30</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Liar's Night">Liar's Night</time></h3>
+                      </summary>
+                      <div>
+                        <p>This holy day pays tribute to Leira and Mask. To placate those deities and ward away their attention, folk of all walks of life don masks and costumes (magical or mundane) to disguise themselves and play at being other than what they are. Commonly seen mask styles include the black mask symbol of Mask and the mirror face of the priests of Leira. But there are no bounds on the disguise you don, and the more elaborate and outlandish it is, the more celebrated the wearer.</p>
+                        <p>The festivities begin in the evening, when people place candles in hollowed-out gourds or pumpkins carved with faces. Each pumpkin represents a person donning a mask, while the light inside represents the truth of the soul. For as long as the candle remains lit, lies told and embarrassing things done don't sully a person's reputation, so celebrations often descend briefly into anarchic hedonism.</p>
+                        <p>Misfortune is said to come to anyone who returns to their pumpkin after celebrating to find it unlit, so buy a candle of good quality and put your gourd beyond reach of the wind. Intentionally blowing out someone else's candle or smashing someone else's pumpkin is taboo, and risks the wrath of both gods- yet it does occur. Tricks and pranks of all kinds are common on this night, and folk expect lies and foolishness. Pickpockets are rife on this day, so few carry much coin with them, having secreted it away somewhere the previous evening. Instead, people fill their pockets and belt pouches with candies. Traditionally, a pickpocket is meant to take the candy and leave a token in return (a tiny toy, a colorful paper folded into a shape, or the like), but this has changed over the years into adults exchanging candies among themselves and simply giving candy to children who ask for it.</p>
+                        <p>By custom, no deals are made nor contracts signed on Liar's Night, because no one trusts that parties will abide by them. Illusionists and stage magicians (whether through magical or practical abilities) make the rounds to entertain private parties (having been paid in advance the previous day) or to perform in public spaces, in the hopes that a good show will earn them a meal, and perhaps a place at a private party in the future.</p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Marpenoth-->
+
+            <!--Uktar-->
+            <article class="month">
+              <header class="header-month">
+                <a id="uktar" class="js-target-anchor target-anchor"></a>
+                <h1>Uktar</h1>
+                <div class="month-nickname">
+                  <span>The Rotting
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                  <details class="holiday details-alt">
+                      <summary>
+                          <p>On the night of the brightest moon:</p>
+                          <h3><time datetime="P1D" title=" Selûne's Hallowing"> Selûne's Hallowing</time></h3>
+                      </summary>
+                      <div>
+                          <p>On whatever night in Uktar the moon is fullest, Waterdavians celebrate Selune's Hallowing. The goddess is the focus of worship throughout the full phase, of course, but the major ceremony on this night is a parade of worshipers leaving the House of the Moon at moonrise and moving down to the harbor, where the high priestess wields the Wand of the Four Moons in a ceremony blessing all navigators. This holy relic is said to be the mace wielded by Selilne in her first battle against Shar, and again in a fight with her sister during the Time of Troubles. It miraculously appeared in Waterdeep after the Godswar, and has since been the focus of many divine signs. You can view it in the House of the Moon at other times of the year, but only from a well-guarded distance.</p>
+                          <p>If you're lucky, you might see the Wand of the Four Moons weep. Droplets said to be the tears of Se!Gne manifest on the mace from time to time, and are collected by the priestesses for use in potions that can heal, cure lycanthropy, and be used as holy water.</p>
+                      </div>
+                  </details>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 1">1</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 3">3</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 7">7</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Uktar 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 11">11</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Uktar 20">20</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Last Sheaf">Last Sheaf</time></h3>
+                      </summary>
+                      <div>
+                        <p>Sometimes called "The Small Feast," this day of residential feasting is held in celebration of the year's bounty. Small gifts (traditionally hand kegs of ale, jars of preserves, or smoked fish and meats) are exchanged among neighbors, and "last letters" are galhered for carriage by ship captains and caravan merchants- so called because they are the last to leave the city before travel becomes difficult. Of Waterdeep's many celebrations, this one is perhaps the most relaxed and relaxing. Plan to spend a little extra on good food and enjoy a meal with those nearest you, be they dearest hearts or the folk across the hall in the inn.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 21">21</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Uktar 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Uktar-->
+
+            <!--Nightal-->
+            <article class="month">
+              <header class="header-month">
+                <a id="nightal" class="js-target-anchor target-anchor"></a>
+                <h1>Nightal</h1>
+                <div class="month-nickname">
+                  <span>The Drawing Down
+                    <svg class="banner-left" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                    <svg class="banner-right" viewBox="0 0 40 40" width="40">
+                      <use xlink:href="#banner" href="#banner" />
+                    </svg>
+                  </span>
+                </div>
+              </header>
+              <section>
+                <ul class="tendays">
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 1">1</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 2">2</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 3">3</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 4">4</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 5">5</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 6">6</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 7">7</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 8">8</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 9">9</time>
+                  </li>
+                  <li class="tenday-1 day">
+                    <time datetime="P1D" title="Nightal 10">10</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 11">11</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Howldown">Howldown</time></h3>
+                      </summary>
+                      <div>
+                        <p>In honor of Malar, members of the City Guard leave the city in groups on this day to hunt down known threats to farmers and travelers, including brigands, wolves, owlbears, ogres, and trolls that haunt the roads and wilderness. These hunts typically last no longer than a tenday. During the same span of time, the City Watch engages in its own rigorous hunt for malefactors within the city walls. If you've any reason to doubt your standing in the eyes of the law, avoid Waterdeep for at least a tenday after Howldown.</p>
+                        <p>With no real hunting to do of their own, the children of Waterdeep spend Howldown engaging in mock hunts of adults dressed up as monsters, and play at the killing of these predators.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 12">12</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 13">13</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 14">14</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 15">15</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 16">16</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 17">17</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 18">18</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 19">19</time>
+                  </li>
+                  <li class="tenday-2 day">
+                    <time datetime="P1D" title="Nightal 20">20</time>
+                    <details class="holiday">
+                      <summary>
+                        <h3><time datetime="P1D" title="Simril">Simril</time></h3>
+                      </summary>
+                      <div>
+                        <p>When dusk comes on this day, folk go outside to locate particular stars that were lucky for their ancestors, or that were associated with their own births. They then attempt to stay up through the night, celebrating outside with bonfires, song, and warmed drinks. Cloudy nights often draw larger crowds than clear ones, since glimpsing your star through the haze is thought to be a blessing from Tymora. Inside buildings, service folk keep roaring fires and engage in making food to keep celebrants fed throughout the long night and into morning of the next day. 1 f you have no particular star of your own, you'll find many vendors of star maps willing to divine which is yours-based upon your place and date of birth-and to point you in the right direction for a shard or two.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 21">21</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 22">22</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 23">23</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 24">24</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 25">25</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 26">26</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 27">27</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 28">28</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 29">29</time>
+                  </li>
+                  <li class="tenday-3 day">
+                    <time datetime="P1D" title="Nightal 30">30</time>
+                  </li>
+                </ul>
+              </section>
+            </article>
+            <!--/Nightal-->
+
+        </div>
+        <span id="js-back-to-top" class="back-to-top"></span>
+
+        <footer class="footer">
+            <p class="disclaimer">The Waterdeep Calendar is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        </footer>
+    </main>
+
+    <svg class="hide-svg" id="banner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+        <linearGradient id="a" x2="40" y1="20" y2="20" gradientUnits="userSpaceOnUse">
+            <stop offset="0"/>
+            <stop offset=".022" stop-color="#000111"/>
+            <stop offset=".08" stop-color="#000436"/>
+            <stop offset=".144" stop-color="#000758"/>
+            <stop offset=".214" stop-color="#000974"/>
+            <stop offset=".292" stop-color="#000b8b"/>
+            <stop offset=".383" stop-color="#000c9d"/>
+            <stop offset=".492" stop-color="#000da9"/>
+            <stop offset=".64" stop-color="#000eb0"/>
+            <stop offset="1" stop-color="#000eb2"/>
+        </linearGradient>
+        <path fill="url(#a)" d="M40 0H0v40h40L19.2 20z"/>
+    </svg>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+// Put the name of the class you like to add the Z-index
+
+// how to use
+// .class {
+//   z-index: z(z2);
+// }
+
+$z-index: (
+  negative     : -1,
+  z1           :  1,     // General z layer
+  z2           :  2,     // General z layer
+  z3           :  3,     // General z layer
+  z4           :  4,     // General z layer
+
+  filter1      :  5,     // plp filtermenu mobile level1
+  filter2      :  6,     // plp filtermenu mobile level2
+  filter3      :  7,     // plp filtermenu mobile level3
+  filter4      :  8,     // plp filtermenu mobile level4
+  headermenu   :  10,     // top header menu
+  overlay      :  11,     // general overlay to show a modal
+  modal        :  12,    // modal / poup layer
+  loader       :  13     // loader indicator
+);
+
+// Function to run the maps
+@function z($name) {
+	@if map-has-key($z-index, $name) {
+		@return map-get($z-index, $name);
+	}
+
+	@warn "The key #{$name} is not in the map ’$z-index";
+	@return null;
+};

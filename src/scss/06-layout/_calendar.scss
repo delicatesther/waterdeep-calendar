@@ -1,0 +1,21 @@
+/*
+  ******************* Calendar ******************
+  Description:
+  Layout for the calendar tendays and such
+  --------------------------------------------------
+*/
+.tendays {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @include breakpoint('m') {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 162px) 12px repeat(2, 162px) 12px repeat(2, 162px);
+  }
+  @include breakpoint('xl') {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 162px);
+    grid-gap: 8px;
+  }
+}

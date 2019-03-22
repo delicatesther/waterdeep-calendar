@@ -1,0 +1,77 @@
+// ***************** Normalise ***************** //
+// Description:
+// Partial to standardise general styling like boxsizing
+// -----------------------------------------------
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+img[src$=".svg"] {width: 100%;}
+
+input, textarea, p, a, h1, h2, h3, h4, h5, h6, div, br, li, td, article, span {
+  /* Exception for input areas */
+  user-select: text;
+}
+
+// -----------------------------------------------------------------------------
+// Form style resets
+// -----------------------------------------------------------------------------
+
+// Remove focus outline for mouse users, retains it for keyboard users
+// (browser support pending)
+*:focus:not(:focus-visible) { outline: none }
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+textarea  {
+  &::-ms-clear {
+    display: none;
+  }
+  &::placeholder {
+    color: mix($black, $white, 60%);
+  }
+}
+
+// Turns off the arrows for Firefox
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  // Remove arrow for IE10+
+  &::-ms-expand {
+    display: none;
+  }
+  option {
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  border: none;
+}

@@ -1,0 +1,13 @@
+// ***************** Defaults ***************** //
+// Description:
+// Really basic stuff like body background and such
+// -----------------------------------------------
+
+body {
+  background-color: $paper;
+  background: url('../../images/background.jpg') repeat-y;
+  -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ min-height: 100%;
+ background-size: cover;
+}

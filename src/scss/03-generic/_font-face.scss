@@ -1,0 +1,13 @@
+// ***************** FONT FACE ***************** //
+// Description:
+// Imported custom fonts
+// -----------------------------------------------
+
+@font-face {
+    font-family: 'PlainBlack';
+    src: url('../../fonts/PlainBlack-Normal.woff2') format('woff2'),
+        url('../../fonts/PlainBlack-Normal.woff') format('woff');
+
+    font-weight: 900;
+    font-style: normal;
+}
